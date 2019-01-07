@@ -1,0 +1,2 @@
+<?
+$MESS['LIKE_ARTICLE_HEADER']="Likes";

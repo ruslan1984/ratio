@@ -1,0 +1,45 @@
+.rating-form__ratingBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+.rating-form .ratingBlock__item {
+  background-image: url("../img/stars.png");
+  width: 18px;
+  height: 18px;
+  display: block;
+  background-size: 36px 18px;
+  background-repeat: no-repeat;
+  background-position: -18px;
+  cursor: url("../img/pointer.png"), pointer; }
+.rating-form .ratingBlock > .ratingBlock__item:hover, .rating-form .ratingBlock > .ratingBlock__item:hover ~ .ratingItem, .rating-form .ratingBlock > .ratingBlock__item.selected, .rating-form .ratingBlock > .ratingBlock__item.selected ~ .ratingItem {
+  background-position: 0; }
+.rating-form__button {
+  cursor: url("../img/pointer.png"), pointer;
+  width: 80px;
+  margin-top: 50px;
+  border-radius: 6px;
+  border: 1px solid #d4d4d4;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.75);
+  font-family: Verdana;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e2e2e2), color-stop(30%, #e2e2e2), color-stop(70%, #f2f2f2), to(#f2f2f2));
+  background-image: linear-gradient(to top, #e2e2e2 0%, #e2e2e2 30%, #f2f2f2 70%, #f2f2f2 100%);
+  font-size: 11px;
+  letter-spacing: 1px; }
+  .rating-form__button:hover {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#fdffcc), color-stop(30%, #fdffcc), color-stop(70%, #feffeb), to(#feffeb));
+    background-image: linear-gradient(to top, #fdffcc 0%, #fdffcc 30%, #feffeb 70%, #feffeb 100%); }
+  .rating-form__button:focus {
+    -webkit-box-shadow: 0px 0px 2px #d800ff;
+    box-shadow: 0px 0px 2px #d800ff; }
+  .rating-form__button:active {
+    padding-top: 2px;
+    padding-bottom: 0;
+    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.26);
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.26); }
